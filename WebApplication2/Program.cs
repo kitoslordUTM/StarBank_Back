@@ -5,7 +5,7 @@ using WebApplication2.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// A�adir servicios al contenedor.
+// Añadir servicios al contenedor.
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -30,11 +30,15 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
-    app.UseDeveloperExceptionPage(); // P�gina de excepciones en desarrollo
+    app.UseDeveloperExceptionPage(); // Página de excepciones en desarrollo
 }
 
 app.UseAuthorization();
 app.MapControllers();
 app.UseCors("AllowWebapp");
+
+// Obtener el puerto desde las variables de entorno y configurar la aplicación para que lo utilice
+var port = Environment.GetEnvironmentVariable("PORT") ?? "5000"; // Render asigna el puerto en tiempo de ejecución
+app.Urls.Add($"http://*:{port}");
 
 app.Run();
