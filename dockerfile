@@ -2,19 +2,13 @@
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /app
 
-# Copia el archivo de proyecto (.csproj) en el directorio de trabajo
-COPY WebApplication2/WebApplication2.csproj ./WebApplication2/
-
-# Cambia al directorio del proyecto
+# Copia el archivo de proyecto (.csproj) y restaura dependencias
+COPY WebApplication2/WebApplication2.csproj WebApplication2/
 WORKDIR /app/WebApplication2
-
-# Restaura las dependencias del proyecto
 RUN dotnet restore
 
-# Copia todos los archivos del proyecto
+# Copia el resto de los archivos del proyecto y compila la aplicación
 COPY WebApplication2/. ./
-
-# Publica la aplicación en modo Release
 RUN dotnet publish -c Release -o /app/out
 
 # Usa la imagen oficial de .NET runtime para ejecutar la aplicación
