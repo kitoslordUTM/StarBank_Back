@@ -1,20 +1,21 @@
 # Usa la imagen oficial de .NET SDK para compilar la aplicación
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
-WORKDIR /app
+WORKDIR /src
 
-# Copia el archivo de proyecto (.csproj) y restaura dependencias
-COPY WebApplication2/WebApplication2.csproj WebApplication2/
-WORKDIR /app/WebApplication2
+# Copia todos los archivos al contenedor
+COPY . .
+
+# Cambia al directorio del proyecto para restaurar dependencias
+WORKDIR /src/WebApplication2
 RUN dotnet restore
 
-# Copia el resto de los archivos del proyecto y compila la aplicación
-COPY WebApplication2/. ./
-RUN dotnet publish -c Release -o /app/out
+# Publica la aplicación en modo Release
+RUN dotnet publish -c Release -o /app/publish
 
 # Usa la imagen oficial de .NET runtime para ejecutar la aplicación
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
 WORKDIR /app
-COPY --from=build /app/out .
+COPY --from=build /app/publish .
 
 # Expone el puerto en el que la aplicación estará escuchando
 EXPOSE 80
