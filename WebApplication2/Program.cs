@@ -26,10 +26,11 @@ builder.Services.AddCors(options => options.AddPolicy("AllowWebapp",
 var app = builder.Build();
 
 // Configurar el pipeline de solicitudes HTTP.
+app.UseSwagger();
+app.UseSwaggerUI();
+
 if (app.Environment.IsDevelopment())
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
     app.UseDeveloperExceptionPage(); // Página de excepciones en desarrollo
 }
 
