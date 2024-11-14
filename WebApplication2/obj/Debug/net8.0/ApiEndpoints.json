@@ -1,0 +1,453 @@
+[
+  {
+    "ContainingType": "WebApplication2.Controllers.ClienteController",
+    "Method": "GetTransaccion",
+    "RelativePath": "api/Cliente/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebApplication2.Models.HistorialTransacciones",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication2.Controllers.ClienteController",
+    "Method": "GetCreditoEducativoByNumeroCuenta",
+    "RelativePath": "api/Cliente/DatosCE",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "numeroCuenta",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication2.Controllers.ClienteController",
+    "Method": "DepositarATarjetaDebito",
+    "RelativePath": "api/Cliente/Depositar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "WebApplication2.Controllers.ClienteController\u002BDepositoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication2.Controllers.ClienteController",
+    "Method": "DepositarMensualidadDeudaAutomovil",
+    "RelativePath": "api/Cliente/DepositarMensualidadDeudaAutomovil",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "WebApplication2.Controllers.ClienteController\u002BDepositoMensualidadAutoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication2.Controllers.ClienteController",
+    "Method": "DepositarMensualidadDeudaCreditoEducativo",
+    "RelativePath": "api/Cliente/DepositarMensualidadDeudaCreditoEducativo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "WebApplication2.Controllers.ClienteController\u002BDepositoMensualidadRequestE",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication2.Controllers.ClienteController",
+    "Method": "DepositarMensualidadDeudaHipoteca",
+    "RelativePath": "api/Cliente/DepositarMensualidadDeudaHipoteca",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "WebApplication2.Controllers.ClienteController\u002BDepositoMensualidadRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication2.Controllers.ClienteController",
+    "Method": "DepositarParaDeuda",
+    "RelativePath": "api/Cliente/DepositarParaDeuda",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "WebApplication2.Controllers.ClienteController\u002BDepositoRequestCredito",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication2.Controllers.ClienteController",
+    "Method": "DepositarParaDeudaAutomovil",
+    "RelativePath": "api/Cliente/DepositarParaDeudaAutomovil",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "WebApplication2.Controllers.ClienteController\u002BDepositoRequestAutomovil",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication2.Controllers.ClienteController",
+    "Method": "DepositarParaDeudaHipoteca",
+    "RelativePath": "api/Cliente/DepositarParaDeudaHipoteca",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "WebApplication2.Controllers.ClienteController\u002BDepositoRequestHipoteca",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication2.Controllers.ClienteController",
+    "Method": "EditarNIP",
+    "RelativePath": "api/Cliente/EditarNIP",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "WebApplication2.Controllers.ClienteController\u002BEditarNIPRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication2.Controllers.ClienteController",
+    "Method": "EditarNIPCredito",
+    "RelativePath": "api/Cliente/EditarNIPCredito",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "WebApplication2.Controllers.ClienteController\u002BEditarNIPRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication2.Controllers.ClienteController",
+    "Method": "EnviarCorreo",
+    "RelativePath": "api/Cliente/EnviarCorreo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "correoInfo",
+        "Type": "WebApplication2.Controllers.ClienteController\u002BCorreoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication2.Controllers.ClienteController",
+    "Method": "IniciarSesion",
+    "RelativePath": "api/Cliente/IniciarSesion",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "inicioSesion",
+        "Type": "WebApplication2.Models.InicioSesion",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication2.Controllers.ClienteController",
+    "Method": "IniciarSesionCredito",
+    "RelativePath": "api/Cliente/IniciarSesionCredito",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "WebApplication2.Controllers.ClienteController\u002BConsultaDeudaRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication2.Controllers.ClienteController",
+    "Method": "IniciarSesionDebito",
+    "RelativePath": "api/Cliente/iniciarsesiondebito",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "datos",
+        "Type": "WebApplication2.Controllers.ClienteController\u002BDatosDebito",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication2.Controllers.ClienteController",
+    "Method": "Lista",
+    "RelativePath": "api/Cliente/Lista",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication2.Controllers.ClienteController",
+    "Method": "Login",
+    "RelativePath": "api/Cliente/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "WebApplication2.Controllers.ClienteController\u002BLoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication2.Controllers.ClienteController",
+    "Method": "ObtenerDeudaHipoteca",
+    "RelativePath": "api/Cliente/ObtenerDeudaHipoteca",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "NumeroCuenta",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication2.Controllers.ClienteController",
+    "Method": "ObtenerMensualidadDeudaAutomovil",
+    "RelativePath": "api/Cliente/ObtenerMensualidadDeudaAutomovil",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "NumeroCuenta",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication2.Controllers.ClienteController",
+    "Method": "PagarDeuda",
+    "RelativePath": "api/Cliente/PagarDeuda",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "WebApplication2.Controllers.ClienteController\u002BPagoDeudaRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication2.Controllers.ClienteController",
+    "Method": "PagarMensualidad",
+    "RelativePath": "api/Cliente/PagarMensualidad",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "WebApplication2.Controllers.ClienteController\u002BPagoMensualidadRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication2.Controllers.ClienteController",
+    "Method": "GetTransaccionesPorCorreo",
+    "RelativePath": "api/Cliente/PorCorreo/{correoID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "correoID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WebApplication2.Models.HistorialTransacciones, WebApplication2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication2.Controllers.ClienteController",
+    "Method": "RetirarDeTarjetaDebito",
+    "RelativePath": "api/Cliente/Retirar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "WebApplication2.Controllers.ClienteController\u002BRetiroRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication2.Controllers.ClienteController",
+    "Method": "PostTransaccion",
+    "RelativePath": "api/Cliente/Transacciones",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "transaccion",
+        "Type": "WebApplication2.Models.HistorialTransacciones",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication2.Controllers.ClienteController",
+    "Method": "TransferirSaldo",
+    "RelativePath": "api/Cliente/transferir",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "datos",
+        "Type": "WebApplication2.Controllers.ClienteController\u002BTransferenciaDatos",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication2.Controllers.NotificationController",
+    "Method": "SendNotification1",
+    "RelativePath": "api/Notification/sendNotification1",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "correoDto",
+        "Type": "WebApplication2.Controllers.NotificationController\u002BNotificationCorreoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication2.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[WebApplication2.WeatherForecast, WebApplication2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]
